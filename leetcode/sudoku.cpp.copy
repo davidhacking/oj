@@ -1,0 +1,74 @@
+#include "./stdc++.h"
+
+using namespace std;
+
+class Solution {
+public:
+	bool check(vector<vector<char> >& b, char t, int i, int j) {
+		for (int k = 0; k < 9; k++) {
+			if (b[i][k] == t) return false;
+			if (b[k][j] == t) return false;
+		}
+		return true;
+	}
+	bool isValidSudoku(vector<vector<char> >& b, vector<mutilset<char> > &m, int i, int j) {
+		while (b[i][j] != '.') {
+			if (j < 8) {
+				j++;
+			} else if (i < 8) {
+				j = 0;
+				i++;
+			} else {
+				return true;
+			}
+		}
+		if (m[(i / 3) * 3 + j / 3].size() <= 0) return false;
+		for (mutilset<char>::iterator iter = m[(i / 3) * 3 + j / 3].begin(); iter != m[(i / 3) * 3 + j / 3].end(); iter++) {
+			if (check(b, *iter, i, j)) {
+				char t = *iter;
+				b[i][j] = t;
+				m[(i / 3) * 3 + j / 3].erase(iter);
+				int ti = i, tj = j;
+				if (tj < 8) {
+					tj++;
+				} else if (ti < 8) {
+					tj = 0;
+					ti++;
+				} else {
+					return true;
+				}
+				bool f = isValidSudoku(b, m, ti, tj);
+				if (!f) {
+					m[(i / 3) * 3 + j / 3].insert(t);
+					b[i][j] = '.';
+				} else {
+					return true;
+				}
+			}
+		}
+	}
+    bool isValidSudoku(vector<vector<char> >& board) {
+        mutilset<char> t;
+        for (char i = '0'; i <= '9'; i++) {
+        	t.insert(i);
+        }
+        vector<mutilset<char> > m(9, t);
+        bool flag = false;
+        for (int i = 0; i < 9; i++) {
+        	for (int j = 0; j < 9; j++) {
+        		if (board[i][j] != '.') {
+        			flag = true;
+        			m[(i / 3) * 3 + j / 3].erase(m[(i / 3) * 3 + j / 3].lower_bound(board[i][j]));
+        		}
+        	}
+        }
+        if (!flag) {
+        	return true;
+        }
+        return isValidSudoku(board, m, 0, 0);
+    }
+};
+
+int main() {
+	return 0;
+}
