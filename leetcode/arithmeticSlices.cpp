@@ -2,6 +2,24 @@
 // #include <bits/stdc++.h>
 using namespace std;
 
+/*
+https://leetcode.com/problems/arithmetic-slices/#/description
+A sequence of number is called arithmetic 
+if it consists of at least three elements 
+and if the difference between any two consecutive elements is the same.
+
+For example, these are arithmetic sequence:
+
+1, 3, 5, 7, 9
+7, 7, 7, 7
+3, -1, -5, -9
+The following sequence is not arithmetic.
+
+1, 1, 2, 5, 7
+
+两两相减，找到连续多少个数相同，再计算等产生多少对
+*/
+
 class Solution {
 public:
 	std::vector<int> v;

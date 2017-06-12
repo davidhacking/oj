@@ -1,0 +1,31 @@
+Proto Recv-Q Send-Q  Local Address          Foreign Address        (state)    
+tcp4       0      0  192.168.1.15.64467     ssl.gstatic.com.https  SYN_SENT   
+tcp4       0      0  192.168.1.15.64465     tsa01s07-in-f14..https SYN_SENT   
+tcp4       0      0  192.168.1.15.64464     tsa01s07-in-f14..https SYN_SENT   
+tcp4       0      0  192.168.1.15.64463     ssl.gstatic.com.https  SYN_SENT   
+tcp4       0      0  192.168.1.15.64462     drive.google.com.https SYN_SENT   
+tcp4       0      0  192.168.1.15.64461     ssl.gstatic.com.https  SYN_SENT   
+tcp4       0      0  192.168.1.15.64460     drive.google.com.https SYN_SENT   
+tcp4       0      0  192.168.1.15.64458     ti-in-f100.1e100.https SYN_SENT   
+tcp4       0      0  192.168.1.15.64457     ti-in-f100.1e100.https SYN_SENT   
+tcp4       0      0  192.168.1.15.64455     asia-courier.pus.5223  ESTABLISHED
+tcp4       0      0  192.168.1.15.64432     beacons5.gvt3.co.https ESTABLISHED
+tcp4       0      0  192.168.1.15.64428     203.208.41.184.https   ESTABLISHED
+tcp4       0      0  192.168.1.15.64410     5-courier.sandbo.5223  ESTABLISHED
+tcp4       0    101  192.168.1.15.64384     17.252.157.37.5223     FIN_WAIT_1 
+tcp4       0    101  192.168.1.15.64347     17.188.132.72.5223     FIN_WAIT_1 
+tcp4       0      0  192.168.1.15.64295     183.3.234.107.https    ESTABLISHED
+tcp4       0    101  192.168.1.15.64285     17.252.140.93.5223     FIN_WAIT_1 
+tcp4       0      0  localhost.54347        localhost.64246        ESTABLISHED
+tcp4       0      0  localhost.64246        localhost.54347        ESTABLISHED
+tcp4       0      0  localhost.54347        localhost.64245        ESTABLISHED
+tcp4       0      0  localhost.64245        localhost.54347        ESTABLISHED
+tcp4       0      0  localhost.54347        localhost.64243        ESTABLISHED
+tcp4       0      0  localhost.64243        localhost.54347        ESTABLISHED
+tcp4       0      0  localhost.54347        localhost.64242        ESTABLISHED
+tcp4       0      0  localhost.64242        localhost.54347        ESTABLISHED
+tcp4       0      0  192.168.1.15.64169     tk-in-f188.1e100.5228  ESTABLISHED
+tcp4       0      0  192.168.1.15.64148     web.push.126.net.6003  ESTABLISHED
+udp4       0      0  *.64178                *.*                               
+udp4       0      0  *.*                    *.*                               
+udp6       0      0  *.59109                *.*                               

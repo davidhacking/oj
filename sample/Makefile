@@ -22,3 +22,11 @@ maxRect:	mkbin
 	g++ -g maxRect.cpp -o bin/maxRect
 bucket_sort:	mkbin
 	g++ -g bucket_sort.cpp -o bin/bucket_sort
+topDownMergeSort: mkbin
+	g++ -g topDownMergeSort.cpp -o bin/topDownMergeSort
+subfixCompute:	mkbin
+	g++ -g subfixCompute.cpp -o bin/subfixCompute
+kmp:	mkbin
+	g++ -g kmp.cpp -o bin/kmp
+min_cost_tree:	mkbin
+	g++ -g min_cost_tree.cpp -o bin/min_cost_tree

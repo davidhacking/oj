@@ -2,6 +2,10 @@
 
 using namespace std;
 
+/*
+https://leetcode.com/problems/word-break-ii/#/description
+*/
+
 struct Data {
     int index; // index of s
     int len; // dict len
@@ -59,6 +63,12 @@ public:
             }
         return v[start].f = f;
     }
+    /*
+    这个是我的方法：为每个wordDict的item find在s中的index，按照index和length
+    为每个index寻找wordBreak即getString，所有后面的index在前面的index+length中的都不能参与getString
+    这样会有一条路径，有些index就是不能走到最后的，这里做一个flag标记一下，下一次这个index直接跳过
+    rank 40.70%
+    */
     vector<string> wordBreak(string s, vector<string>& wordDict) {
         vector<Data> v;
         vector<string> ret;

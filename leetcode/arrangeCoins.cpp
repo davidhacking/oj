@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/*
+https://leetcode.com/problems/arranging-coins/#/description
+一种方法，N = (x+1)*x/2 x<(2N)^0.5，二分搜索，或者从无穷大搜
+第二种方法，精确求解出(int)((-1 + Math.sqrt(1 + 8 * (long)n)) / 2);
+*/
+
 class Solution {
 public:
     int arrangeCoins(int N) {

@@ -54,6 +54,8 @@ stock2:	mkbin
 	g++ -g stock2.cpp -o bin/stock2
 stock3:	mkbin
 	g++ -g stock3.cpp -o bin/stock3
+stock4:	mkbin
+	g++ -g stock4.cpp -o bin/stock4
 dps:	mkbin
 	g++ -g dp_square.cpp -o bin/dps
 add_num:	mkbin
@@ -102,3 +104,47 @@ countPrimes:	mkbin
 	g++ -g countPrimes.cpp -o bin/countPrimes
 countSmaller:	mkbin
 	g++ -g countSmaller.cpp -o bin/countSmaller
+countRangeSum:	mkbin
+	g++ -g countRangeSum.cpp -o bin/countRangeSum
+countSmaller2:	mkbin
+	g++ -g countSmaller2.cpp -o bin/countSmaller2
+findSubString:	mkbin
+	g++ -g findSubString.cpp -o bin/findSubString
+findSubString2:	mkbin
+	g++ -g findSubString2.cpp -o bin/findSubString2
+validPreOrder:	mkbin
+	g++ -g validPreOrder.cpp -o bin/validPreOrder
+validPreOrder2:	mkbin
+	g++ -g validPreOrder2.cpp -o bin/validPreOrder2
+maxRepeat:	mkbin
+	g++ -g maxRepeat.cpp -o bin/maxRepeat
+buildTree:	mkbin
+	g++ -g buildTree.cpp -o bin/buildTree
+boardExist:	mkbin
+	g++ -g boardExist.cpp -o bin/boardExist
+addOps:	mkbin
+	g++ -g addOps.cpp -o bin/addOps
+sortPair:	mkbin
+	g++ -g sortPair.cpp -o bin/sortPair
+trap:	mkbin
+	g++ -g trap.cpp -o bin/trap
+trap2:	mkbin
+	g++ -g trap2.cpp -o bin/trap2
+numTrees: 	mkbin
+	g++ -g numTrees.cpp -o bin/numTrees
+kthSmallest: mkbin
+	g++ -g getKFromSortM.cpp -o bin/kthSmallest
+treeZigzag:	mkbin
+	g++ -g treeZigzag.cpp -o bin/treeZigzag
+lru:	mkbin
+	g++ -g lru.cpp -o bin/lru
+numDecode:	mkbin
+	g++ -g numDecode.cpp -o bin/numDecode
+jump:	mkbin
+	g++ -g jumpDist.cpp -o bin/jump
+interleave:	mkbin
+	g++ -g interleave.cpp -o bin/interleave
+combine:	mkbin
+	g++ -g combine.cpp -o bin/combine
+subarraySum:	mkbin
+	g++ -g subarraySum.cpp -o bin/subarraySum

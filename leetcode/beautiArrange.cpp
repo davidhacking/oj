@@ -1,6 +1,10 @@
 #include "./stdc++.h"
 
 using namespace std;
+/*
+https://leetcode.com/problems/beautiful-arrangement/#/description
+dfs的方法，注意的是当某个位置可以换时就直接换
+*/
 
 void print_v(vector<int> &v) {
 	for (int i = 0; i < v.size(); i++) {
